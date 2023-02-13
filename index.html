@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Introduction to AI</title>
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./dist/reset.css" />
+    <link rel="stylesheet" href="./dist/reveal.css" />
+    <link rel="stylesheet" href="./dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/monokai.css" />
+
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">
+<section class="title-slide">
+    <h1>Intro to AI</h1>
+</section>
+
+</script></section><section  data-markdown><script type="text/template">
+# About Me
+- Jason Wu
+	- BS Fudan
+	<!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
+	- MS Stanford
+	<!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
+	- PhD NYU Stern
+	<!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
+
+</script></section><section ><section data-markdown><script type="text/template">
+#
+> "AI began with an ancient wish to forge the gods."
+> — Pamela McCorduck, *Machines Who Think, 1979*
+
+Frankenstein (1818) &nbsp;&nbsp; Ex Machina (2015)
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Frankenstein%27s_monster_%28Boris_Karloff%29.jpg/640px-Frankenstein%27s_monster_%28Boris_Karloff%29.jpg" height="300px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://static.wikia.nocookie.net/non-aliencreatures/images/9/9a/Ava-ExMachina.jpg" height="300px">
+
+<aside class="notes"><ul>
+<li>AI began not with Alan Turing or McCarthy but with the ancient wish to forge the gods a quote from Pamela McCorduck machines who think</li>
+<li>&quot;Frankenstein&quot;是玛丽·雪莱的一部经典科学小说，讲述了一个叫玛丽的科学家利用非常先进的科技，制造出了一个人造生物，但是它的外貌非常可怕，所以遭到了周围所有人的排斥。尽管如此，这个人造生物还是努力寻找自己的家和自我认同，最终却因为周围社会的偏见和恐惧，导致它的结局非常悲惨。整个故事让人们思考了人类的责任和同情心的重要性，以及科学和技术的影响。</li>
+<li>&quot;Ex Machina&quot; (2015) 是一部科幻电影，讲述了一个技术大亨以测试他创造的人工智能（AI）女性机器人的真实感情为目的，请来一名程序员参与试验的故事。程序员发现机器人不仅拥有令人难以置信的智慧和感情，还隐藏着不为人知的秘密。他必须决定是否相信机器人，并试图理解真正的目的，同时面对创造者和机器人之间复杂的关系。</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+## Artificial Brain Simulation
+<iframe width="640" height="480" src="https://www.youtube.com/embed/FhosaQSWCFw" title="Artificial Brain Simulation - Thalamocortical System, 3.5 Billion Synapses, 16.7 Million Neurons" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<aside class="notes"><ul>
+<li>丘脑皮质系统 Visualization 3% of the neurons, this is the thing we wish to understand<ul>
+<li>that magical thing between our ears that allows us all to see and hear and think and reason and hope and dream and fear our eventual mortality all of that is the thing we wish to understand</li>
+<li>Engineering our intelligence system, mystery of our brain</li>
+</ul>
+</li>
+</ul>
+</aside></script></section></section><section ><section data-markdown><script type="text/template">
+# A brief history
+![](https://www.ubs.com/content/microsites/artificial-intelligence/en/new-dawn/jcr:content/mainpar/gridcontrol_3744534/col2/textimage_152341523/image.1280.png/1561390230842.png)
+
+<aside class="notes"><ul>
+<li><p>人类对我们星球的冲击和影响是不可否认的。</p>
+<p>  我们建造了绵延数英里的城市，建造了刺破天际的摩天大楼。我们开凿隧道穿过山脉，改变河流的方向，催生了新的土地。道路和电线在地面上纵横交错，而飞机和卫星则堵塞了大气层和其他地方。随着我们对地球的统治权的稳固，我们甚至把目光投向了征服太阳系。</p>
+<p>  我们花了几百万年才达到这一点。但自18世纪末的第一次工业革命以来，进步就像滚雪球一样。在不到250年的时间里，我们从马车飞跃到自动驾驶汽车；从靠星星导航到依靠声控GPS指示；从给亲人写信到与Siri进行尴尬的对话。</p>
+<p>  最重要的是，互联网比过去的任何一项发明都更多地塑造了不同文明社会的各个方面。即时沟通、分享和消费信息的能力--无论是猫咪视频还是科学研究--都放大了技术突破的步伐。正如英特尔和飞兆半导体的联合创始人戈登-摩尔在1965年观察到的那样，随着芯片中晶体管数量和速度的增加，处理能力每两年就会翻一番--这种速度是更广泛的发现和创新的象征。</p>
+</li>
+<li><p>我们已经进入了第四次工业革命，这个时代将由极端自动化和无处不在的连接来定义和推动。</p>
+<p>  与其他三次工业革命一样，这一时期所产生的变化将不可逆转地改变我们的未来进程，以及我们与技术和彼此之间的互动方式。但在这个新的数字时代，将有一个发展是如此的深刻和震荡，它将打破地球长期以来以人为本的现状--人工智能（AI）的诞生和超越。</p>
+</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+#### 
+
+>	**Alan Turing, 1951:** "It seems probable that once the **machine thinking method** had started, it would not take long to outstrip our feeble powers ... 
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Alan_Turing_Aged_16.jpg" width=25% height=25%>
+
+<aside class="notes"><p>似乎很有可能的是，一旦机器思维方法开始，它将不需要很长时间就能超越我们的微弱的力量。他们将能够相互交流，以磨练他们的智慧。因此，在某个阶段，我们应该期待机器能够控制局面。</p>
+</aside></script></section><section data-markdown><script type="text/template">
+####
+
+>	... They would be able to converse with each other to sharpen their wits. At some stage therefore, we should have to expect the **machines to take control**."
+
+<!-- <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Alan_Turing_Aged_16.jpg" width=25% height=25%> -->
+
+<aside class="notes"><p>似乎很有可能的是，一旦机器思维方法开始，它将不需要很长时间就能超越我们的微弱的力量。他们将能够相互交流，以磨练他们的智慧。因此，在某个阶段，我们应该期待机器能够控制局面。</p>
+</aside></script></section></section><section  data-markdown><script type="text/template">
+# First tasks for AI?
+
+<aside class="notes"><ul>
+<li>那我刚才提到了，人工智能的本质就是我们作为老师教计算机如何学习新事物。</li>
+<li>猜猜我们最先教计算机做什么？—— 对了，就是玩游戏。</li>
+</ul>
+</aside></script></section><section ><section data-markdown><script type="text/template">
+## Artificial Intelligence in Context of Human History
+
+<img src="https://www.ubs.com/content/dam/ubs/microsites/artificial-intelligence/img-chapter-one-header.gif" 
+width=75% height=75%>
+
+<aside class="notes"><ul>
+<li><strong>1951年：</strong>阿兰-图灵发表了理论上能够下棋的第一个纸上程序。</li>
+<li><strong>1989年：</strong>国际象棋世界冠军加里-卡斯帕罗夫在一场象棋比赛中击败了IBM的 &quot;深思&quot;。</li>
+<li><strong>1996年：</strong>卡斯帕罗夫在另一场比赛中击败了IBM的深蓝。</li>
+<li><strong>1997年：</strong>IBM的 &quot;深蓝 &quot;成为第一个在比赛中击败特级大师的国际象棋人工智能。</li>
+<li><strong>2017年：</strong>基于神经网络的数字自动机AlphaZero在国际象棋比赛中以28比0击败了Stockfish，并取得了72次平局。</li>
+<li>**2019年:**Leela Chess Zero (LCZero v0.21.1-nT40.T8.610)在100场比赛中以53.5比46.5击败Stockfish 19050918，获得顶级国际象棋引擎锦标赛第15赛季冠军。</li>
+<li><strong>现在：</strong>现代国际象棋人工智能引擎部署了深度学习，从成千上万的比赛中学习。他们经常有国际棋联的评级，国际象棋的评级系统，超过3,400，远远超过最好的人类选手。</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+## Kasparov vs Deep Blue, 1997
+
+<img src="https://images.theconversation.com/files/168950/original/file-20170511-32613-1ipnlda.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=675.0&fit=crop" 
+width=75% height=75%>
+
+<aside class="notes"><p>1997年5月11日，深蓝击败了卡斯帕罗夫，创造了历史，成为第一台在标准时间控制下的六局比赛中击败世界冠军的计算机。卡斯帕罗夫赢得了第一场比赛，输掉了第二场，然后平了后面的三场。当 &quot;深蓝 &quot;通过赢得最后一局而拿下比赛时，卡斯帕罗夫拒绝相信它。</p>
+</aside></script></section><section data-markdown><script type="text/template">
+## Lee Sedol vs AlphaGo, 2016
+<img src="https://miro.medium.com/max/1200/0*I3e_Y1ewLVn0MMxV.jpeg" 
+width=75% height=75%>
+
+<aside class="notes"><p>AlphaGo是一个由谷歌开发的人工智能围棋程序，它在2016年与韩国职业围棋选手李世石（Lee Sedol）进行了一系列的对弈比赛。这场比赛在围棋界引起了极大的关注，因为这是第一次人工智能程序击败了世界顶尖的围棋选手。在五局比赛中，AlphaGo以4比1的比分获胜。这场比赛标志着人工智能在围棋领域取得了重大突破，并为人工智能在其他领域的发展铺平了道路。</p>
+</aside></script></section><section data-markdown><script type="text/template">
+## Robots on four wheels
+<img src="https://cdn.vox-cdn.com/thumbor/XcaPyxooZ8lz0B1przdPMXWLSNU=/0x0:600x338/1200x800/filters:focal(252x121:348x217):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/58843075/image006.0.gif" 
+width=75% height=75%>
+
+<aside class="notes"><p>人工智能在自动驾驶领域的发展可以追溯到20世纪50年代，当时的研究主要集中在计算机视觉和道路识别方面。随着计算机处理能力的不断提高，人工智能在自动驾驶领域取得了显著的进展。</p>
+<p>20世纪90年代，机器学习和神经网络技术的出现，为人工智能在自动驾驶领域的发展提供了基础。随后，随着传感器和硬件的不断改进，自动驾驶车辆的研发取得了显著的进展。</p>
+<p>近年来，人工智能在自动驾驶领域的发展进入了一个新阶段，许多公司和研究机构都在加紧研发和推广自动驾驶技术。通过大量的数据和模拟，人工智能技术在道路识别、决策、控制等方面取得了长足的进展。目前，自动驾驶技术已经在一些特定场景下应用，但全面普及仍需要一段时间。</p>
+</aside></script></section><section data-markdown><script type="text/template">
+## Robots on two legs.
+
+<img src="https://images.axios.com/vFO6a3A0uWsSgSpFL2dDugBixSY=/2018/10/16/1539653097522.gif" 
+width=75% height=75%>
+
+<aside class="notes"><p>Boston Dynamics是一家著名的机器人研发公司，主要从事机器人研究和开发。该公司的机器人设计具有高度的智能和机械复杂性，其中一些机器人甚至具有走路、跳跃和表演多种动作的能力。Boston Dynamics致力于为工业、军事和商业应用开发高效、稳定和可靠的机器人技术。</p>
+</aside></script></section></section><section  data-markdown><script type="text/template">
+### Turing Award for Deep Learning
+
+<img src="https://static01.nyt.com/images/2019/03/27/business/27TURING-triptych/27TURING-triptych-superJumbo.jpg" 
+width=75% height=75%>
+
+*Yann LeCun, Geoffrey Hinton and Yoshua Bengio*
+
+<aside class="notes"><p>图灵奖的颁发对象。
+&quot;使深层神经网络成为计算的重要组成部分的 概念和工程上的突破，使深度神经网络成为计算的关键组成部分&quot;。
+(此外，还因为在怀疑论面前的普及。）</p>
+<p>2004年，杰弗里-辛顿加倍努力追求一种叫做神经网络的技术理念。</p>
+<p>这是一种让机器看到周围世界、识别声音、甚至理解自然语言的方法。但是，科学家们已经花了50多年时间研究神经网络的概念，而机器并不能真正做到这些。</p>
+<p>在加拿大政府的支持下，多伦多大学计算机科学教授辛顿博士组织了一个新的研究团体，其中有几位学者也在处理这个概念。他们包括纽约大学的教授Yann LeCun和蒙特利尔大学的Yoshua Bengio。</p>
+<p>周三，世界上最大的计算机专业人员协会--计算机协会宣布，辛顿、勒库恩和本吉奥博士因其在神经网络方面的工作而获得今年的图灵奖。图灵奖于1966年设立，通常被称为计算机领域的诺贝尔奖，它包括100万美元的奖金，这三位科学家将分享这笔奖金。</p>
+<p>在过去的十年里，这些研究人员培育的大概念重新发明了技术的构建方式，加速了人脸识别服务、会说话的数字助理、仓库机器人和自动驾驶汽车的发展。Hinton博士现在在谷歌工作，LeCun博士在Facebook工作。本吉奥博士已经与IBM和微软签订了协议。</p>
+<p>西雅图艾伦人工智能研究所(Allen Institute for Artificial Intelligence)的首席执行官、人工智能界的知名人士奥伦-埃齐奥尼(Oren Etzioni)说：&quot;我们所看到的完全是科学范式的转变&quot;。&quot;历史转向了他们的方向，我感到很敬畏。&quot;</p>
+</aside></script></section><section ><section data-markdown><script type="text/template">
+## Natural Language Processing is a Hot Topic!
+
+</script></section><section data-markdown><script type="text/template">
+### [GPT-3 Examples](https://platform.openai.com/examples)
+
+</script></section><section data-markdown><script type="text/template">
+### [ChatGPT Examples](https://chat.openai.com/chat)
+
+<aside class="notes"><p>Demo ChatGPT while embedding the website at the background</p>
+</aside></script></section></section><section ><section data-markdown><script type="text/template">
+## Deep reinforcement learning and Self-Play
+
+<aside class="notes"><p>深度强化学习和自我游戏</p>
+</aside></script></section><section data-markdown><script type="text/template">
+## OpenAI & Dota 2
+
+<img src="https://www.teslarati.com/wp-content/uploads/2017/08/giphy-1.gif" 
+width=75% height=75%>
+
+<aside class="notes"><p>Dota 2 as a testbed for the messiness and continuous nature of  the real world: teamwork, long time horizons, and hidden  information.</p>
+</aside></script></section><section data-markdown><script type="text/template">
+## Dota 2 Prize
+
+<img src="https://s2.loli.net/2023/02/14/Bzm1Eoqw5lKRbOJ.png" width=50% height=50%>
+
+<aside class="notes"><p><a href="https://liquipedia.net/dota2/Portal:Statistics">https://liquipedia.net/dota2/Portal:Statistics</a></p>
+<p>Embed</p>
+</aside></script></section><section data-markdown><script type="text/template">
+## OpenAI & Dota 2 Progress
+- Aug, 2017: 1v1 bot beats top professional Dota 2 players.
+<!-- .element: class="fragment fade-in-then-out" data-fragment-index="1" -->
+- Aug, 2018: OpenAI Five lost two games against top Dota 2 players at The International. 
+<!-- .element: class="fragment fade-in-then-out" data-fragment-index="2" -->
+- Apr, 2019: OpenAI Five beats OG team (the 2018 world champions)
+<!-- .element: class="fragment fade-in-then-out" data-fragment-index="3" -->
+
+<aside class="notes"><ul>
+<li>2018 “We are looking forward to pushing Five to the next level.”</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+#### DeepMind Quake III Arena Capture the Flag
+
+<img src="https://images.frandroid.com/wp-content/uploads/2018/07/1wazowixey.gif" 
+width=60% height=60%> <img src="https://assets-global.website-files.com/621e749a546b7592125f38ed/622724d86793159dd36203c6_CTF%2001.gif" 
+width=60% height=60%>
+
+<aside class="notes"><ul>
+<li>地球上居住着数十亿人，每个人都有自己的目标和行动，但仍然能够通过团队、组织和社会聚集在一起，展示令人印象深刻的集体智慧。 </li>
+<li>这是一个我们称之为多代理学习的环境：许多个体代理必须独立行动，但又要学会与其他代理互动和合作。</li>
+<li>这是一个非常困难的问题 — 因为有了共同适应的代理人世界是不断变化的。</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+##### The agents automatically figure out the game rules, important  concepts, behaviors, strategies, etc.
+
+
+<img src="https://assets-global.website-files.com/621e749a546b7592125f38ed/622726eac975f27c5d7cd03c_CTF%2008.gif" 
+width=75% height=75%>
+
+<aside class="notes"><p>鉴于神经网络和人类思维之间的根本差异，很难说DeepMind的人工智能是否表现出了人类水平的性能。然而，从表面上看，该人工智能已经开发出许多有趣的行为，让人联想到人类玩游戏的方式。</p>
+<p>根据DeepMind的数据，在训练过程中，人工智能表现出的行为表明，它已经发展出自己的概念来表示游戏中的重要事件，例如当敌人或队友夺取旗帜时。</p>
+<p>人工智能代理还自动开发了一些看似基本的战术，如跟随队友、建立大本营周边防御和在敌人基地扎营。</p>
+</aside></script></section><section data-markdown><script type="text/template">
+## DeepMind AlphaStar
+<img src="https://assets-global.website-files.com/621e749a546b7592125f38ed/62271e2f604e640534eeca99_AlphaStar%2003.gif" 
+width=75% height=75%>
+
+<aside class="notes"><ul>
+<li>Dec, 2018: AlphaStar beats MaNa, one of the world’s strongest professional StarCraft players, 5-0.</li>
+<li>Oct, 2019: AlphaStar reaches Grandmaster level playing the game under  professionally approved conditions (for humans).</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### AlphaStar League exploiter discovery
+<iframe width="640" height="480" src="https://www.youtube.com/embed/KPLYhRBCcvk" title="AlphaStar League exploiter discovery" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<aside class="notes"><p>AlphaStar是一个耐人寻味的非正统玩家 — 它拥有最好的职业选手的反应能力和速度，但策略和风格却完全属于它自己。训练AlphaStar的方式是让特工在联赛中相互竞争，这导致了游戏玩法难以想象的不寻常；它真的让你质疑职业玩家真正探索了多少《星际争霸》的多样化可能性。</p>
+<p>Diego &quot;Kelazhur&quot; Schwimer，《星际争霸II》职业玩家</p>
+<section data-background-iframe="https://openai.com/blog/solving-rubiks-cube/" data-background-interactive>
+</section></aside></script></section><section data-markdown><script type="text/template">
+##
+<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+	<h2>Open AI Solving Rubik's Cube</h2>
+	<p>Automatic Domain Randomization (ADR) – generate progressively more difficult environment as the system learns (alternative for self-play)
+</p>
+</div>
+
+
+</script></section></section><section ><section data-markdown><script type="text/template">
+## Autonomous Vehicles and AI-Assisted Driving
+
+<img src="https://geospatialmedia.s3.amazonaws.com/wp-content/uploads/2018/02/bi-graphics_autonomous-cars.png" 
+width=75% height=75%>
+
+<aside class="notes"><p>2级和4级自动驾驶指的是汽车工程师学会（SAE）定义的不同自动化水平。SAE定义了一个标准的分类系统，范围从0级到5级，每个级别代表了车辆的不同自动化水平。</p>
+<p>第2级（部分自动化）自主驾驶涉及到车辆配备了先进的驾驶辅助系统（ADAS），如自适应巡航控制（ACC）、车道保持辅助（LKA）和自动紧急制动（AEB）。驾驶员必须在现场并随时注意道路情况，但车辆能够在某些情况下控制速度、制动和转向。</p>
+<p>4级（高度自动化）自主驾驶涉及到车辆能够在没有人类干预的情况下自行驾驶，但仅在某些条件下。例如，4级自动驾驶汽车可能能够在高速公路上自行驾驶，但在城市地区必须由司机控制。车辆的车载系统能够处理驾驶的所有方面，包括导航、加速和制动，但司机必须准备好在必要时接管。</p>
+<p>总之，2级自动驾驶是向完全自动化迈出的一步，但仍然需要驾驶员的关注，而4级自动驾驶代表了更高的自动化水平，但仍然有一些限制和约束。</p>
+</aside></script></section><section data-markdown><script type="text/template">
+### Tesla
+<img src="https://media1.giphy.com/media/H7rpSYHRyYgamxQNqw/giphy.gif" 
+width=75% height=75%>
+
+<aside class="notes"><p>特斯拉和Waymo是走在自动驾驶汽车发展前沿的两家公司。然而，他们以不同的方式对待这项技术和市场。</p>
+<p>特斯拉的自动驾驶技术被称为Autopilot，是一套先进的驾驶辅助功能，被整合到该公司的电动汽车中。特斯拉的目标是为其客户提供完全的自动驾驶体验，该公司一直在通过空中软件更新逐步为其自动驾驶系统增加新的功能。特斯拉的做法是为其车辆配备必要的硬件和软件，以便在未来实现完全的自动驾驶能力。</p>
+</aside></script></section><section data-markdown><script type="text/template">
+### Waymo
+<img src="https://techcrunch.com/wp-content/uploads/2017/11/waymo-chandler.gif" 
+width=75% height=75%>
+
+<aside class="notes"><p>另一方面，Waymo是Alphabet（谷歌的母公司）的子公司，成立的目的是开发自动驾驶技术。与特斯拉不同，Waymo不从事汽车制造业务。相反，该公司专注于在各种情况下开发和部署自动驾驶技术，包括叫车服务、卡车运输和个人用车。Waymo的做法是与汽车制造商合作，将其自动驾驶技术整合到他们的车辆中，或用其技术改造现有车辆。</p>
+<p>在技术方面，Waymo被认为是处于自动驾驶发展的最前沿。该公司多年来一直在公共道路上测试其技术，它已经积累了数百万英里的自动驾驶经验。另一方面，特斯拉仍在开发其自动驾驶能力，其自动驾驶系统还没有被认为是完全自主的。</p>
+<p>总之，虽然特斯拉和Waymo都在努力实现自动驾驶汽车的未来，但它们有不同的方法，处于不同的发展阶段。特斯拉专注于将自动驾驶技术整合到自己的车辆中，而Waymo则专注于开发技术并与汽车制造商合作，将其推向市场。</p>
+</aside></script></section></section></div>
+    </div>
+
+    <script src="./dist/reveal.js"></script>
+
+    <script src="./plugin/markdown/markdown.js"></script>
+    <script src="./plugin/highlight/highlight.js"></script>
+    <script src="./plugin/zoom/zoom.js"></script>
+    <script src="./plugin/notes/notes.js"></script>
+    <script src="./plugin/math/math.js"></script>
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        slideNumber: true,
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath
+        ]
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"transition":"fade"}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
